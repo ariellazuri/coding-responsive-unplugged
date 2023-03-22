@@ -331,6 +331,11 @@ input[type=button] {
   margin: 0;
 }
 
+.features i {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
 /*Reviews*/
 .reviews {
   background-color: #2a423a;
