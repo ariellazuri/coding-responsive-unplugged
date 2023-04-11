@@ -577,7 +577,7 @@ input[type=button] {
     margin: 0;
   }
 
-  /*Aside*/
+  /* Aside */
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -623,9 +623,9 @@ input[type=button] {
     width: 85%;
   }
 
-  .reviews article div,
-  .reviews article figure {
-    width: 50%;
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
   }
 
   .reviews h3 {
@@ -672,29 +672,40 @@ input[type=button] {
    About Page
    ========================================================================== */
 
-  .mission-content {
+  .mission .content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px 80px;
+    width: 80%;
   }
 
   .mission-content p {
     width: 45%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .map figure {
     padding-bottom: 45.5%;
   }
 
-  .contact-section .content-wrapper h2 {
-    width: 80%;
+  .contact-section .contact-content h2 {
+    width: 70%;
+    padding: 75px 75px 0;
   }
 
   .contact-content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   .contact-content h4 {
@@ -809,6 +820,7 @@ input[type=button] {
 
   .contact-content h4 {
     font-size: 1.875em;
+
   }
 
   /* ==========================================================================
@@ -833,6 +845,7 @@ input[type=button] {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -842,16 +855,20 @@ input[type=button] {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]::after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
+
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
@@ -860,24 +877,29 @@ input[type=button] {
   a[href^="javascript:"]::after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
