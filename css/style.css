@@ -696,15 +696,13 @@ input[type=button] {
     padding-bottom: 45.5%;
   }
 
-  .contact-section .contact-content h2 {
-    width: 70%;
-    padding: 75px 75px 0;
+  .contact-section .content-wrapper h2 {
+    width: 80%;
   }
 
   .contact-content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     flex-flow: row wrap;
   }
 
@@ -820,7 +818,6 @@ input[type=button] {
 
   .contact-content h4 {
     font-size: 1.875em;
-
   }
 
   /* ==========================================================================
